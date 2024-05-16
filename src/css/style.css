@@ -1,7 +1,258 @@
 :root {
+  --colorTextForm: rgba(255, 255, 255, 0.38);
+  --colorText: rgba(255, 255, 255, 0.9);
+  --secondColorText: rgba(255, 255, 255, 0.78);
+  --thirdColorText: rgba(255, 255, 255, 0.55);
+  --colorAvailability: rgba(255, 165, 55, 0.55);
+  --colorTextBrands: rgba(255, 255, 255, 0.8);
+  --colorTextButton: #ffffff;
+  /* ====================text========================= */
+  --colorButton: #ffffff00;
+  --сolorBgBrands: rgba(44, 53, 61, 0.2);
+  --colorBgHover: rgba(40, 48, 54, 0.6);
   --colorBg: #1e252b;
+  /* =====================bg========================== */
+
+  --colorTextHover: #fdf5ff;
+  --colorHover: #ff6e30;
+  /* ==================hover===================== */
+  --fontFamily: "Poppins", sans-serif;
+  --secondFamily: "Roboto", sans-serif;
 }
 
 body {
   background-color: var(--colorBg);
+  font-family: var(--fontFamily);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--colorText);
+}
+
+/* ================header================= */
+
+.button-acction {
+  padding: 18px 24px;
+  color: var(--secondColorText);
+  font-weight: 600;
+  background-color: var(--colorButton);
+  border-radius: 8px;
+}
+
+.button-acction:hover {
+  background-color: var(--colorHover);
+  color: var(--colorTextHover);
+}
+
+/* =============main================ */
+
+.hero-title {
+  font-size: 50px;
+  line-height: 1.4;
+}
+
+.hero-text {
+  color: var(--thirdColorText);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.form-input {
+  color: var(--colorTextForm);
+  font-weight: 400;
+  font-size: 14px;
+  background-color: var(--colorButton);
+}
+
+.form-button {
+  color: var(--colorTextButton);
+  background-color: var(--colorHover);
+  padding: 12px 36px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* =====================tools======================= */
+
+.tools-title {
+  font-size: 48px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.tools-subtitle {
+  color: var(--thirdColorText);
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: center;
+}
+
+.tool-name {
+  color: var(--secondColorText);
+  font-size: 24px;
+}
+
+.tool-availability {
+  color: var(--colorAvailability);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.tool-text {
+  color: var(--thirdColorText);
+  font-weight: 400;
+  line-height: 1.87;
+}
+
+.tool-link {
+  color: var(--thirdColorText);
+  font-weight: 600;
+  padding: 9px 35px;
+  background-color: var(--colorButton);
+  border-radius: 8px;
+}
+
+.tool-link:hover {
+  background-color: var(--colorHover);
+}
+
+.tools-link {
+  color: var(--colorHover);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 17px 38px;
+  font-weight: 600;
+}
+
+/* =====================brands======================= */
+
+.brands-title {
+  color: var(--colorTextBrands);
+  font-size: 24px;
+}
+
+/* =====================info======================= */
+
+.info-title {
+  font-size: 48px;
+  line-height: 1.3;
+}
+
+.info-text {
+  color: var(--thirdColorText);
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.info-button {
+  color: var(--colorTextButton);
+  background-color: var(--colorHover);
+  font-size: 18px;
+  padding: 16px 40px;
+  border-radius: 8px;
+}
+
+/* ====================apps======================= */
+
+.app-name {
+  color: var(--secondColorText);
+  font-size: 24px;
+}
+
+.app-availability {
+  color: var(--colorAvailability);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.app-text {
+  color: var(--thirdColorText);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.14;
+}
+
+.app-link {
+  color: var(--thirdColorText);
+  font-weight: 600;
+  padding: 9px 35px;
+  background-color: var(--colorButton);
+  border-radius: 8px;
+}
+
+.app-link:hover {
+  background-color: var(--colorHover);
+}
+
+/* =====================teammate======================= */
+
+.teammate-name {
+  color: var(--secondColorText);
+  font-size: 26px;
+  letter-spacing: 0.01em;
+}
+
+.teammate-role {
+  color: var(--thirdColorText);
+  font-weight: 400;
+}
+
+.teammate-text {
+  color: var(--thirdColorText);
+  font-family: var(--secondFamily);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.01em;
+}
+
+/* =====================join======================= */
+
+.join-title {
+  font-size: 48px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.join-text {
+  color: var(--thirdColorText);
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: center;
+}
+
+.join-input {
+  color: var(--colorTextForm);
+  font-weight: 400;
+  font-size: 14px;
+  background-color: var(--colorButton);
+}
+
+.join-button {
+  color: var(--colorTextButton);
+  font-weight: 600;
+  padding: 12px 36px;
+  background-color: var(--colorHover);
+  border-radius: 8px;
+}
+
+/* ===========================footer======================= */
+
+.footer-text {
+  color: var(--thirdColorText);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.79;
+}
+
+.contact-title,
+.categories-title,
+.company-title {
+  font-size: 20px;
+}
+
+.contact-item,
+.categories-link,
+.company-item {
+  color: var(--thirdColorText);
 }
