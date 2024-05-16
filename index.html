@@ -3,9 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <title>Antools</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./src/img/logo/logo.svg" alt="logo" class="logo-img" />
+        </a>
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="list-item"><a href="#" class="list-link">Home</a></li>
+            <li class="list-item">
+              <a href="#" class="list-link">Categories</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">My Collections</a>
+            </li>
+            <li class="list-item"><a href="#" class="list-link">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="header-acction">
+          <button class="button-acction">Login</button>
+          <button class="button-acction">Sign up</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-info">
+            <h1 class="hero-title">Awesome tools for Designer & Developer.</h1>
+            <p class="hero-subtitle">
+              Antool is a web collection of information on paid or free Design
+              and Development tools
+            </p>
+            <form action="#" class="hero-form">
+              <input
+                class="form-input"
+                type="text"
+                placeholder="find more than 430+ tools..."
+              />
+              <button class="form-button">Search</button>
+            </form>
+          </div>
+          <div class="webnetwork">
+            <a href="https://www.facebook.com/" class="webnetwork-link"
+              ><img
+                src="./src/img/icon/facebook.svg"
+                alt="facebook"
+                class="webnetwork-img" /></a
+            ><a href="https://www.instagram.com/" class="webnetwork-link"
+              ><img
+                src="./src/img/icon/instagram.svg"
+                alt="instagram"
+                class="webnetwork-img" /></a
+            ><a href="https://twitter.com/" class="webnetwork-link"
+              ><img
+                src="./src/img/icon/twitter.svg"
+                alt="twitter"
+                class="webnetwork-img"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
