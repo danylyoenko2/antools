@@ -223,8 +223,41 @@ body {
   margin-bottom: 30px;
 }
 
-.tool-card-acction {
-  padding-bottom: 33px;
+.tool-card-acctions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.tool-input-acctions {
+  display: flex;
+  column-gap: 12px;
+}
+
+.tool-checkbox {
+  background-color: #ffffff00;
+  width: 42px;
+  height: 42px;
+  background-image: url(../img/icon/like.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  appearance: none;
+  padding: 7px;
+}
+
+.tool-checkbox:nth-child(2) {
+  background-image: url(../img/icon/add.svg);
+  padding: 6px;
+}
+
+.tool-checkbox:nth-child(1):checked {
+  background: #283036;
+  background-image: url(../img/icon/like_hover.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 5px 10px -3px rgba(18, 18, 18, 0.15);
+  border-radius: 8px;
 }
 
 .tool-link {
@@ -263,10 +296,10 @@ body {
   background-color: rgba(44, 53, 61, 0.2);
   border-radius: 25px;
   background-image: radial-gradient(
-    circle,
+    circle at left top,
     rgba(0, 0, 0, 1) 0%,
-    rgba(255, 72, 66, 0.4) 0%,
-    rgba(0, 0, 0, 0) 20%
+    rgba(255, 72, 66, 0.4) 1%,
+    rgba(0, 0, 0, 0) 11%
   );
 }
 
@@ -364,6 +397,41 @@ body {
   font-size: 14px;
   line-height: 2.14;
   margin-bottom: 30px;
+}
+
+.app-card-acctions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-checkbox {
+  display: flex;
+  column-gap: 12px;
+}
+
+.app-checkbox {
+  background-color: #ffffff00;
+  width: 42px;
+  height: 42px;
+  background-image: url(../img/icon/like.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  appearance: none;
+  padding: 7px;
+}
+
+.app-checkbox:nth-child(2) {
+  background-image: url(../img/icon/add.svg);
+}
+
+.app-checkbox:nth-child(1):checked {
+  background: #283036;
+  background-image: url(../img/icon/like_hover.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 5px 10px -3px rgba(18, 18, 18, 0.15);
+  border-radius: 8px;
 }
 
 .app-link {
