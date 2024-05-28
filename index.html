@@ -54,14 +54,9 @@
               and Development tools
             </p>
             <form action="#" class="hero-form">
-              <div class="icon-form">
-                <img
-                  src="./src/img/icon/search.svg"
-                  alt="icon"
-                  class="icon-img"
-                />
-              </div>
+              <label for="hero-input" class="hero-label"></label>
               <input
+                id="hero-input"
                 class="form-input"
                 type="text"
                 placeholder="find more than 430+ tools..."
@@ -70,27 +65,35 @@
             </form>
           </div>
           <div class="webnetwork">
-            <a href="https://www.facebook.com/" class="webnetwork-link"
-              ><img
-                src="./src/img/icon/facebook.svg"
-                alt="facebook"
-                class="webnetwork-img" /></a
-            ><a href="https://www.instagram.com/" class="webnetwork-link"
-              ><img
-                src="./src/img/icon/instagram.svg"
-                alt="instagram"
-                class="webnetwork-img" /></a
-            ><a href="https://twitter.com/" class="webnetwork-link"
-              ><img
-                src="./src/img/icon/twitter.svg"
-                alt="twitter"
-                class="webnetwork-img"
-            /></a>
+            <div class="webnetwork-photo">
+              <a href="https://www.facebook.com/" class="webnetwork-link">
+                <img
+                  src="./src/img/icon/facebook.svg"
+                  alt="facebook"
+                  class="webnetwork-img"
+              /></a>
+            </div>
+            <div class="webnetwork-photo">
+              <a href="https://www.instagram.com/" class="webnetwork-link"
+                ><img
+                  src="./src/img/icon/instagram.svg"
+                  alt="instagram"
+                  class="webnetwork-img"
+              /></a>
+            </div>
+            <div class="webnetwork-photo">
+              <a href="https://twitter.com/" class="webnetwork-link"
+                ><img
+                  src="./src/img/icon/twitter.svg"
+                  alt="twitter"
+                  class="webnetwork-img"
+              /></a>
+            </div>
           </div>
         </div>
       </section>
       <section class="tools">
-        <div class="container">
+        <div class="container tools-container">
           <h2 class="tools-title">Most Popular Tools</h2>
           <p class="tools-subtitle">
             Tools for the best Designers and Developers most popularly used in
@@ -115,12 +118,14 @@
               </p>
               <div class="tool-card-acctions">
                 <div class="tool-input-acctions">
-                  <label for="input" class="tool-acction"
-                    ><input type="checkbox" class="tool-checkbox"
-                  /></label>
-                  <label for="input" class="tool-acction">
-                    <input type="checkbox" class="tool-checkbox" />
-                  </label>
+                  <label for="figma" class="tool-acction" hidden></label>
+                  <input id="figma" type="checkbox" class="tool-checkbox" />
+                  <label for="figma-folder" class="tool-acction" hidden></label>
+                  <input
+                    id="figma-folder"
+                    type="checkbox"
+                    class="tool-checkbox"
+                  />
                 </div>
                 <a class="tool-link" href="https://www.figma.com/">Visit</a>
               </div>
@@ -143,12 +148,18 @@
               </p>
               <div class="tool-card-acctions">
                 <div class="tool-input-acctions">
-                  <label for="input" class="tool-acction"
-                    ><input type="checkbox" class="tool-checkbox"
-                  /></label>
-                  <label for="input" class="tool-acction">
-                    <input type="checkbox" class="tool-checkbox" />
-                  </label>
+                  <label for="sketch" class="tool-acction" hidden></label>
+                  <input id="sketch" type="checkbox" class="tool-checkbox" />
+                  <label
+                    for="sketch-folder"
+                    class="tool-acction"
+                    hidden
+                  ></label>
+                  <input
+                    id="sketch-folder"
+                    type="checkbox"
+                    class="tool-checkbox"
+                  />
                 </div>
                 <a class="tool-link" href="https://www.sketch.com/">Visit</a>
               </div>
@@ -172,12 +183,18 @@
               </p>
               <div class="tool-card-acctions">
                 <div class="tool-input-acctions">
-                  <label for="input" class="tool-acction"
-                    ><input type="checkbox" class="tool-checkbox"
-                  /></label>
-                  <label for="input" class="tool-acction">
-                    <input type="checkbox" class="tool-checkbox" />
-                  </label>
+                  <label for="vs-code" class="tool-acction" hidden></label>
+                  <input id="vs-code" type="checkbox" class="tool-checkbox" />
+                  <label
+                    for="vs-code-folder"
+                    class="tool-acction"
+                    hidden
+                  ></label>
+                  <input
+                    id="vs-code-folder"
+                    type="checkbox"
+                    class="tool-checkbox"
+                  />
                 </div>
                 <a class="tool-link" href="https://code.visualstudio.com/"
                   >Visit</a
@@ -188,7 +205,7 @@
             <article class="tools-card">
               <div class="tool-icon">
                 <img
-                  src="./src/img/icon/notion.webp"
+                  src="./src/img/icon/notion.svg"
                   alt="notion"
                   class="tool-img"
                 />
@@ -203,12 +220,18 @@
               </p>
               <div class="tool-card-acctions">
                 <div class="tool-input-acctions">
-                  <label for="input" class="tool-acction"
-                    ><input type="checkbox" class="tool-checkbox"
-                  /></label>
-                  <label for="input" class="tool-acction">
-                    <input type="checkbox" class="tool-checkbox" />
-                  </label>
+                  <label for="notion" class="tool-acction" hidden></label>
+                  <input id="notion" type="checkbox" class="tool-checkbox" />
+                  <label
+                    for="notion-folder"
+                    class="tool-acction"
+                    hidden
+                  ></label>
+                  <input
+                    id="notion-folder"
+                    type="checkbox"
+                    class="tool-checkbox"
+                  />
                 </div>
                 <a class="tool-link" href="https://www.notion.so/">Visit</a>
               </div>
@@ -232,12 +255,14 @@
               </p>
               <div class="tool-card-acctions">
                 <div class="tool-input-acctions">
-                  <label for="input" class="tool-acction"
-                    ><input type="checkbox" class="tool-checkbox"
-                  /></label>
-                  <label for="input" class="tool-acction">
-                    <input type="checkbox" class="tool-checkbox" />
-                  </label>
+                  <label for="slack" class="tool-acction" hidden></label>
+                  <input id="slack" type="checkbox" class="tool-checkbox" />
+                  <label for="slack-folder" class="tool-acction" hidden></label>
+                  <input
+                    id="slack-folder"
+                    type="checkbox"
+                    class="tool-checkbox"
+                  />
                 </div>
                 <a class="tool-link" href="https://slack.com/">Visit</a>
               </div>
@@ -261,12 +286,18 @@
               </p>
               <div class="tool-card-acctions">
                 <div class="tool-input-acctions">
-                  <label for="input" class="tool-acction"
-                    ><input type="checkbox" class="tool-checkbox"
-                  /></label>
-                  <label for="input" class="tool-acction">
-                    <input type="checkbox" class="tool-checkbox" />
-                  </label>
+                  <label for="invision" class="tool-acction" hidden></label>
+                  <input id="invision" type="checkbox" class="tool-checkbox" />
+                  <label
+                    for="invision-folder"
+                    class="tool-acction"
+                    hidden
+                  ></label>
+                  <input
+                    id="invision-folder"
+                    type="checkbox"
+                    class="tool-checkbox"
+                  />
                 </div>
                 <a class="tool-link" href="https://www.invisionapp.com/"
                   >Visit</a
@@ -275,7 +306,7 @@
             </article>
           </div>
           <div class="tools-button">
-            <a class="tools-link">Load more</a>
+            <button class="tools-link">Load more</button>
           </div>
         </div>
       </section>
@@ -308,7 +339,7 @@
               /></a>
             </div>
             <div class="brand-photo">
-              <a href="https://wordpress.com/ru/" class="brand-link">
+              <a href="https://uk.wordpress.org/" class="brand-link">
                 <img
                   src="./src/img/icon/wordpress.svg"
                   alt="wordpress"
@@ -332,52 +363,64 @@
           <div class="newcomer-apps">
             <!-- =======================1==================== -->
             <article class="apps-card">
-              <div class="app-icon">
-                <img
-                  src="./src/img/icon/zeplin.webp"
-                  alt="zeplin"
-                  class="app-img"
-                />
+              <div class="app-face">
+                <div class="app-icon">
+                  <img
+                    src="./src/img/icon/zeplin.svg"
+                    alt="zeplin"
+                    class="app-img"
+                  />
+                </div>
+                <div class="app-info">
+                  <h3 class="app-name">Zeplin</h3>
+                  <p class="app-availability">Free & Paid</p>
+                </div>
               </div>
-              <h3 class="app-name">Zeplin</h3>
-              <p class="app-availability">Free & Paid</p>
               <p class="app-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
               <div class="app-card-acctions">
                 <div class="input-acctions">
-                  <label for="input" class="app-label">
-                    <input type="checkbox" class="app-checkbox" />
-                  </label>
-                  <label for="input" class="app-label">
-                    <input type="checkbox" class="app-checkbox" />
-                  </label>
+                  <label for="zeplin" class="app-label" hidden></label>
+                  <input id="zeplin" type="checkbox" class="app-checkbox" />
+                  <label for="zeplin-folder" class="app-label" hidden></label>
+                  <input
+                    id="zeplin-folder"
+                    type="checkbox"
+                    class="app-checkbox"
+                  />
                 </div>
                 <a class="app-link" href="https://zeplin.io/">Visit</a>
               </div>
             </article>
             <!-- =======================2==================== -->
             <article class="apps-card">
-              <div class="app-icon">
-                <img
-                  src="./src/img/icon/phpstorm.webp"
-                  alt="phpstorm"
-                  class="app-img"
-                />
+              <div class="app-face">
+                <div class="app-icon">
+                  <img
+                    src="./src/img/icon/phpstorm.svg"
+                    alt="phpstorm"
+                    class="app-img"
+                  />
+                </div>
+                <div class="app-info">
+                  <h3 class="app-name">PHPStorm</h3>
+                  <p class="app-availability">Free</p>
+                </div>
               </div>
-              <h3 class="app-name">PHPStorm</h3>
-              <p class="app-availability">Free</p>
               <p class="app-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
               <div class="app-card-acctions">
                 <div class="input-acctions">
-                  <label for="input" class="app-label">
-                    <input type="checkbox" class="app-checkbox" />
-                  </label>
-                  <label for="input" class="app-label">
-                    <input type="checkbox" class="app-checkbox" />
-                  </label>
+                  <label for="phpstorm" class="app-label" hidden></label>
+                  <input id="phpstorm" type="checkbox" class="app-checkbox" />
+                  <label for="phpstorm-folder" class="app-label" hidden></label>
+                  <input
+                    id="phpstorm-folder"
+                    type="checkbox"
+                    class="app-checkbox"
+                  />
                 </div>
                 <a
                   class="app-link"
@@ -388,26 +431,32 @@
             </article>
             <!-- =======================3==================== -->
             <article class="apps-card">
-              <div class="app-icon">
-                <img
-                  src="./src/img/icon/toolbox.webp"
-                  alt="toolbox"
-                  class="app-img"
-                />
+              <div class="app-face">
+                <div class="app-icon">
+                  <img
+                    src="./src/img/icon/toolbox.svg"
+                    alt="toolbox"
+                    class="app-img"
+                  />
+                </div>
+                <div class="app-info">
+                  <h3 class="app-name">Toolbox</h3>
+                  <p class="app-availability">Free</p>
+                </div>
               </div>
-              <h3 class="app-name">Toolbox</h3>
-              <p class="app-availability">Free</p>
               <p class="app-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
               <div class="app-card-acctions">
                 <div class="input-acctions">
-                  <label for="input" class="app-label">
-                    <input type="checkbox" class="app-checkbox" />
-                  </label>
-                  <label for="input" class="app-label">
-                    <input type="checkbox" class="app-checkbox" />
-                  </label>
+                  <label for="toolbox" class="app-label" hidden></label>
+                  <input id="toolbox" type="checkbox" class="app-checkbox" />
+                  <label for="toolbox-folder" class="app-label" hidden></label>
+                  <input
+                    id="toolbox-folder"
+                    type="checkbox"
+                    class="app-checkbox"
+                  />
                 </div>
                 <a
                   class="app-link"
@@ -418,26 +467,36 @@
             </article>
             <!-- =======================4==================== -->
             <article class="apps-card">
-              <div class="app-icon">
-                <img
-                  src="./src/img/icon/procreate.webp"
-                  alt="procreate"
-                  class="app-img"
-                />
+              <div class="app-face">
+                <div class="app-icon">
+                  <img
+                    src="./src/img/icon/procreate.svg"
+                    alt="procreate"
+                    class="app-img"
+                  />
+                </div>
+                <div class="app-info">
+                  <h3 class="app-name">Procreate</h3>
+                  <p class="app-availability">Paid</p>
+                </div>
               </div>
-              <h3 class="app-name">Procreate</h3>
-              <p class="app-availability">Paid</p>
               <p class="app-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
               <div class="app-card-acctions">
                 <div class="input-acctions">
-                  <label for="input" class="app-label">
-                    <input type="checkbox" class="app-checkbox" />
-                  </label>
-                  <label for="input" class="app-label">
-                    <input type="checkbox" class="app-checkbox" />
-                  </label>
+                  <label for="procreate" class="app-label" hidden></label>
+                  <input id="procreate" type="checkbox" class="app-checkbox" />
+                  <label
+                    for="procreate-folder"
+                    class="app-label"
+                    hidden
+                  ></label>
+                  <input
+                    id="procreate-folder"
+                    type="checkbox"
+                    class="app-checkbox"
+                  />
                 </div>
                 <a class="app-link" href="https://procreate.com/">Visit</a>
               </div>
@@ -505,44 +564,46 @@
             Development tools
           </p>
         </div>
-        <div class="footer-contact">
-          <h3 class="contact-title">Contact Us</h3>
-          <ul class="contact-list">
-            <li class="contact-item">
-              <a class="contact-link" href="tel:+621987463">+621987463</a>
-            </li>
-            <li class="contact-item">
-              <address class="contact-address">M Building, No.10 A</address>
-            </li>
-            <li class="contact-item">
-              <a href="mailto:antools@awesome.com">antools@awesome.com</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-categories">
-          <h3 class="categories-title">Categories</h3>
-          <ul class="categories-list">
-            <li class="categories-item">
-              <a href="#" class="categories-link">Design</a>
-            </li>
-            <li class="categories-item">
-              <a href="#" class="categories-link">Development</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-company">
-          <h3 class="company-title">Company Info</h3>
-          <ul class="company-list">
-            <li class="company-item">
-              <a href="#" class="company-link">About Us</a>
-            </li>
-            <li class="company-item">
-              <a href="#" class="company-link">Our Partners</a>
-            </li>
-            <li class="company-item">
-              <a href="#" class="company-link">Blog</a>
-            </li>
-          </ul>
+        <div class="footer-menu">
+          <div class="footer-contact">
+            <h3 class="contact-title">Contact Us</h3>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <a class="contact-link" href="tel:+621987463">+621987463</a>
+              </li>
+              <li class="contact-item">
+                <address class="contact-address">M Building, No.10 A</address>
+              </li>
+              <li class="contact-item">
+                <a href="mailto:antools@awesome.com">antools@awesome.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-categories">
+            <h3 class="categories-title">Categories</h3>
+            <ul class="categories-list">
+              <li class="categories-item">
+                <a href="#" class="categories-link">Design</a>
+              </li>
+              <li class="categories-item">
+                <a href="#" class="categories-link">Development</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-company">
+            <h3 class="company-title">Company Info</h3>
+            <ul class="company-list">
+              <li class="company-item">
+                <a href="#" class="company-link">About Us</a>
+              </li>
+              <li class="company-item">
+                <a href="#" class="company-link">Our Partners</a>
+              </li>
+              <li class="company-item">
+                <a href="#" class="company-link">Blog</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
