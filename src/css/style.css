@@ -270,7 +270,7 @@ body {
   padding: 6px;
 }
 
-.tool-checkbox:nth-child(1):checked {
+.tool-acction:nth-child(1) .tool-checkbox:checked {
   background: #283036;
   background-image: url(../img/icon/like_hover.svg);
   background-repeat: no-repeat;
@@ -466,7 +466,7 @@ body {
   background-image: url(../img/icon/add.svg);
 }
 
-.app-checkbox:nth-child(1):checked {
+.app-label:nth-child(1) .app-checkbox:checked {
   background: #283036;
   background-image: url(../img/icon/like_hover.svg);
   background-repeat: no-repeat;
