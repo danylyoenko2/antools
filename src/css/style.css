@@ -147,16 +147,28 @@ body {
 .form-button {
   color: var(--colorTextButton);
   background-color: var(--colorHover);
-  padding: 12px 36px;
+  padding: 11px 35px;
   border-radius: 8px;
   font-weight: 600;
   margin-right: 11px;
+  border: 1px solid var(--colorButton);
+}
+
+.form-button:hover {
+  background-color: var(--colorButton);
+  border: 1px solid var(--colorHover);
+  transition: all 0.2s ease;
 }
 
 .webnetwork {
   display: flex;
   align-items: center;
   column-gap: 8px;
+}
+
+.webnetwork-link {
+  padding: 11px;
+  border-radius: 8px;
 }
 
 /* =====================tools======================= */
@@ -376,14 +388,14 @@ body {
   color: var(--colorTextButton);
   background-color: var(--colorHover);
   font-size: 18px;
-  padding: 14px 38px;
+  padding: 13px 37px;
   border-radius: 8px;
-  border: 2px solid var(--colorButton);
+  border: 1px solid var(--colorButton);
 }
 
 .info-button:hover {
   background-color: var(--colorButton);
-  border: 2px solid var(--colorHover);
+  border: 1px solid var(--colorHover);
   transition: all 0.3s ease;
 }
 
@@ -593,10 +605,17 @@ body {
 .join-button {
   color: var(--colorTextButton);
   font-weight: 600;
-  padding: 12px 36px;
+  padding: 11px 35px;
   background-color: var(--colorHover);
   border-radius: 8px;
   margin-right: 12px;
+  border: 1px solid var(--colorButton);
+}
+
+.join-button:hover {
+  background-color: var(--colorButton);
+  border: 1px solid var(--colorHover);
+  transition: all 0.2s ease;
 }
 
 /* ===========================footer======================= */
