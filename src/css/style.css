@@ -69,6 +69,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.list-item:hover {
+  opacity: 0.8;
+}
+
 .button-acction {
   padding: 18px 24px;
   color: var(--secondColorText);
@@ -80,6 +84,7 @@ body {
 .button-acction:hover {
   background-color: var(--colorHover);
   color: var(--colorTextHover);
+  transition: 0.15s ease-in;
 }
 
 /* =============main================ */
@@ -119,7 +124,7 @@ body {
   border-radius: 15px;
   width: 500px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 110px;
 }
@@ -130,18 +135,13 @@ body {
   font-weight: 400;
   font-size: 14px;
   background-color: var(--colorButton);
-  padding: 20px 0px 20px 18px;
+  padding: 20px 0px 20px 0px;
+  margin-right: 111px;
+  margin-left: 13px;
 }
 
-.form-input::before {
-  content: "";
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin-left: 4px;
-  background-image: url(../img/icon/search.svg);
-  background-position: center;
-  background-repeat: no-repeat;
+.icon-form {
+  padding-left: 18px;
 }
 
 .form-button {
@@ -187,6 +187,7 @@ body {
 }
 
 .tools-card {
+  flex-basis: calc((100% - 50px) / 3);
   max-width: 390px;
   display: flex;
   flex-wrap: wrap;
@@ -200,7 +201,13 @@ body {
   transform: translate(0px, -20px);
   transition: transform 0.35s ease-in;
   backdrop-filter: blur(50px);
-  background: rgba(40, 48, 54, 0.6);
+  background-color: rgba(40, 48, 54, 0.6);
+  background-image: radial-gradient(
+    circle at right top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 118, 55, 0.2) 0%,
+    rgba(0, 0, 0, 0) 20%
+  );
 }
 
 .tool-name {
@@ -270,6 +277,7 @@ body {
 
 .tool-link:hover {
   background-color: var(--colorHover);
+  transition: 0.15s ease-in;
 }
 
 .tools-button {
@@ -285,6 +293,13 @@ body {
   font-weight: 600;
 }
 
+.tools-link:hover {
+  color: var(--colorTextButton);
+  background-color: var(--colorHover);
+  padding: 17px 38px;
+  transition: all 0.3s ease;
+}
+
 /* =====================brands======================= */
 
 .brands-container {
@@ -297,9 +312,9 @@ body {
   border-radius: 25px;
   background-image: radial-gradient(
     circle at left top,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(255, 72, 66, 0.4) 1%,
-    rgba(0, 0, 0, 0) 11%
+    rgba(255, 72, 66, 0.24) 0%,
+    rgba(255, 72, 66, 0.15) 4%,
+    rgba(0, 0, 0, 0) 12%
   );
 }
 
@@ -331,7 +346,7 @@ body {
 }
 
 .newcomer-info {
-  width: 430px;
+  min-width: 427px;
   margin-right: 200px;
 }
 
@@ -361,8 +376,15 @@ body {
   color: var(--colorTextButton);
   background-color: var(--colorHover);
   font-size: 18px;
-  padding: 16px 40px;
+  padding: 14px 38px;
   border-radius: 8px;
+  border: 2px solid var(--colorButton);
+}
+
+.info-button:hover {
+  background-color: var(--colorButton);
+  border: 2px solid var(--colorHover);
+  transition: all 0.3s ease;
 }
 
 .apps-card {
@@ -370,6 +392,7 @@ body {
   border-radius: 15px;
   padding: 28px 22px 28px 21px;
   transition: transform 0.35s ease-in;
+  flex-basis: calc((100% - 48px) / 2);
 }
 
 .app-name {
@@ -380,8 +403,14 @@ body {
 
 .apps-card:hover {
   backdrop-filter: blur(50px);
-  background: rgba(40, 48, 54, 0.6);
+  background-color: rgba(40, 48, 54, 0.6);
   transform: translate(0px, -18px);
+  background-image: radial-gradient(
+    circle at right top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 118, 55, 0.2) 0%,
+    rgba(0, 0, 0, 0) 20%
+  );
 }
 
 .app-availability {
@@ -444,6 +473,7 @@ body {
 
 .app-link:hover {
   background-color: var(--colorHover);
+  transition: 0.15s ease-in;
 }
 
 /* =====================teammate======================= */
@@ -468,6 +498,12 @@ body {
   backdrop-filter: blur(50px);
   background-color: rgba(40, 48, 54, 0.2);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-image: radial-gradient(
+    circle at right bottom,
+    rgba(29, 134, 195, 0.251) 0%,
+    rgba(255, 118, 55, 0.101) 25%,
+    rgba(0, 0, 0, 0) 40%
+  );
 }
 
 .teammate-name {
@@ -565,6 +601,30 @@ body {
 
 /* ===========================footer======================= */
 
+.footer {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-container {
+  display: flex;
+  align-items: top;
+}
+
+.footer-info {
+  max-width: 260px;
+}
+
+.logo-link {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.footer-copyright {
+  margin-bottom: 21px;
+}
+
 .footer-text {
   color: var(--thirdColorText);
   font-weight: 400;
@@ -572,14 +632,29 @@ body {
   line-height: 1.79;
 }
 
+.footer-contact {
+  margin-left: 155px;
+}
+
+.contact-address {
+  font-style: normal;
+}
+
+.footer-categories,
+.footer-company {
+  margin-left: 115px;
+}
+
 .contact-title,
 .categories-title,
 .company-title {
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-item,
-.categories-link,
+.categories-item,
 .company-item {
   color: var(--thirdColorText);
+  margin-bottom: 10px;
 }
