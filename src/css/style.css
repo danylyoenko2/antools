@@ -308,7 +308,6 @@ a {
   background-position: center;
   appearance: none;
   padding: 7px;
-  transition: all 0.2s ease;
 }
 
 .tool-checkbox:nth-child(4) {
@@ -320,7 +319,7 @@ a {
   background-color: var(--colorBgInput);
   background-image: url(../img/icon/like_hover.svg);
   background-repeat: no-repeat;
-  background-position: center 2px;
+  background-position: center;
   background-size: 30px;
   box-shadow: 0 5px 10px -3px rgba(18, 18, 18, 0.15);
   border-radius: 8px;
@@ -549,7 +548,6 @@ a {
   background-size: 30px;
   box-shadow: 0 5px 10px -3px rgba(18, 18, 18, 0.15);
   border-radius: 8px;
-  transition: all 0.2s ease;
 }
 
 .app-checkbox:nth-child(4):checked {
@@ -560,7 +558,6 @@ a {
   background-color: var(--colorBgInput);
   box-shadow: 0 5px 10px -3px rgba(18, 18, 18, 0.15);
   border-radius: 8px;
-  transition: all 0.2s ease;
 }
 
 .app-link {
