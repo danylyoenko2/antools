@@ -75,11 +75,11 @@ a {
 
 .list-item {
   color: var(--thirdColorText);
+  transition: all 0.2s ease;
 }
 
 .list-item:hover {
   color: var(--secondFamily);
-  transition: all 0.2s ease;
 }
 
 .button-acction {
@@ -88,12 +88,12 @@ a {
   font-weight: 600;
   background-color: var(--colorButton);
   border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .button-acction:hover {
   background-color: var(--colorHover);
   color: var(--colorTextHover);
-  transition: 0.15s ease-in;
 }
 
 /* =============main================ */
@@ -171,12 +171,12 @@ a {
   font-weight: 600;
   margin-right: 11px;
   border: 1px solid var(--colorButton);
+  transition: all 0.2s ease;
 }
 
 .form-button:hover {
   background-color: var(--colorButton);
   border: 1px solid var(--colorHover);
-  transition: all 0.2s ease;
 }
 
 .webnetwork {
@@ -185,11 +185,14 @@ a {
   column-gap: 8px;
 }
 
+.webnetwork-photo .webnetwork-img {
+  transition: all 0.3s ease-in;
+}
+
 .webnetwork-photo .webnetwork-img:nth-child(1):hover {
   content: url("../img/icon/facebook-colored.svg");
   width: 34px;
   height: 34px;
-  transition: all 0.3s ease-in;
   transform: scale(1.1);
 }
 
@@ -341,11 +344,11 @@ a {
   padding: 9px 35px;
   background-color: var(--colorButton);
   border-radius: 8px;
+  transition: 0.15s ease-in;
 }
 
 .tool-link:hover {
   background-color: var(--colorHover);
-  transition: 0.15s ease-in;
 }
 
 .tools-button {
@@ -359,13 +362,13 @@ a {
   border-radius: 8px;
   padding: 17px 38px;
   font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .tools-link:hover {
   color: var(--colorTextButton);
   background-color: var(--colorHover);
   padding: 17px 38px;
-  transition: all 0.4s ease;
 }
 
 /* =====================brands======================= */
@@ -406,13 +409,13 @@ a {
 .brand-photo {
   padding: 7px;
   border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .brand-photo:hover {
   background-color: var(--colorBgInput);
   box-shadow: 0 5px 10px -3px rgba(18, 18, 18, 0.15);
   transform: translate(0px, -10px);
-  transition: all 0.3s ease;
 }
 
 /* =====================newcomer======================= */
@@ -460,12 +463,12 @@ a {
   padding: 13px 37px;
   border-radius: 8px;
   border: 1px solid var(--colorButton);
+  transition: all 0.3s ease;
 }
 
 .info-button:hover {
   background-color: var(--colorButton);
   border: 1px solid var(--colorHover);
-  transition: all 0.3s ease;
 }
 
 .apps-card {
@@ -566,11 +569,11 @@ a {
   padding: 9px 35px;
   background-color: var(--colorButton);
   border-radius: 8px;
+  transition: 0.15s ease-in;
 }
 
 .app-link:hover {
   background-color: var(--colorHover);
-  transition: 0.15s ease-in;
 }
 
 /* =====================teammate======================= */
@@ -703,12 +706,12 @@ a {
   border-radius: 8px;
   margin-right: 12px;
   border: 1px solid var(--colorButton);
+  transition: all 0.3s ease;
 }
 
 .join-button:hover {
   background-color: var(--colorButton);
   border: 1px solid var(--colorHover);
-  transition: all 0.2s ease;
 }
 
 /* ===========================footer======================= */
@@ -766,11 +769,11 @@ a {
 .company-item {
   color: var(--thirdColorText);
   margin-bottom: 10px;
+  transition: 0.2s ease;
 }
 
 .contact-item:hover,
 .categories-item:hover,
 .company-item:hover {
   color: var(--secondFamily);
-  transition: 0.2s ease;
 }
