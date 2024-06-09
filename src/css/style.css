@@ -185,37 +185,29 @@ a {
   column-gap: 8px;
 }
 
-.webnetwork-photo .webnetwork-img {
-  transition: all 0.3s ease-in;
+.webnetwork-item {
+  padding: 11px 11px 8px 11px;
+  border-radius: 8px;
 }
 
-.webnetwork-photo .webnetwork-img:nth-child(1):hover {
+.webnetwork-item .webnetwork-img {
+  transition: all 0.3s ease;
+}
+
+.webnetwork-item .webnetwork-img:nth-child(1):hover {
   content: url("../img/icon/facebook-colored.svg");
   width: 34px;
   height: 34px;
   transform: scale(1.1);
 }
 
-.webnetwork-photo:nth-child(2) .webnetwork-img:hover {
+.webnetwork-item:nth-child(2) .webnetwork-img:hover {
   content: url("../img/icon/instagram-colored.svg");
 }
 
-.webnetwork-photo:nth-child(3) .webnetwork-img:hover {
+.webnetwork-item:nth-child(3) .webnetwork-img:hover {
   content: url("../img/icon/twitter-colored.svg");
 }
-
-.webnetwork-photo:hover {
-  background-color: var(--colorBgInput);
-  box-shadow: 0 5px 10px -3px rgba(18, 18, 18, 0.15);
-  border-radius: 8px;
-  transition: all 0.3s ease-in;
-}
-
-.webnetwork-link {
-  padding: 11px 11px 8px 11px;
-  border-radius: 8px;
-}
-
 /* =====================tools======================= */
 
 .tools {
